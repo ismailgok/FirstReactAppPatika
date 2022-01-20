@@ -2,23 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import User from './User';
 
-const friends = [
-
-  {
-    name:"Ayşe"
-  },
-  {
-    name:"Fatma"
-  },
-  {
-    name:"Ahmet"
-  },
-  {
-    name:"Mehmet"
-  }
-
-
-];
+const friends = ["Fatma","Ahmet","Mehmet","Ali"];
 
 function App() {
   return (
