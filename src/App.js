@@ -28,7 +28,7 @@ function App() {
       surname="Gök"
       age={25}
       friends={friends}
-      
+      isLoggedIn={true}
       />
     </div>
   );
