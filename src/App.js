@@ -10,7 +10,7 @@ function App() {
       <User 
       name="İsmail"
       surname="Gök"
-      age={25}
+      age="25"
       friends={friends}
       isLoggedIn={true}
       />
