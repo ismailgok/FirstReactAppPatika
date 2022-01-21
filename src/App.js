@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-import User from './User';
 
-const friends = ["Fatma","Ahmet","Mehmet","Ali"];
+import { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <User 
-      name="İsmail"
-      surname="Gök"
-      age="25"
-      friends={friends}
-      isLoggedIn={true}
-      address={{
-        title:"Etiler/İstanbul",
-        zip:34500,
-      }}
-      />
-    </div>
-  );
+function App(){
+
+    const [name,setName] = useState("Ahmet");
+    const [age, setAge] = useState(23) 
+
+    return(
+
+        <div className="App">
+
+        <div>Merhaba {name}!</div>
+        <br />
+        <div>Yaşınız: {age}</div>
+        <br/>
+        <button onClick={() => setName("İsmail")}>İsmi Güncelle</button>
+        
+        <button onClick={() => setAge(25)}>Yaşı Güncelle</button>
+       </div>
+
+
+    );
+
+
 }
+
+
 
 export default App;
