@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
 
-const User = ({name,surname,age,friends,isLoggedIn}) => {
+const User = ({name,surname,age,friends,isLoggedIn,address}) => {
+  
+    if(!isLoggedIn){
+        return <div>Giriş yapmadınız.</div>
+    }
     return(
     <>
         <h1>
@@ -8,6 +12,8 @@ const User = ({name,surname,age,friends,isLoggedIn}) => {
             isLoggedIn ? `${name} ${surname} (${age})` : `Giriş yapmadınız` 
             }
         </h1>
+
+        {address.title} {address.zip}
         {
             friends &&
             friends.map((friend,index) => (
@@ -16,6 +22,7 @@ const User = ({name,surname,age,friends,isLoggedIn}) => {
                </div>
                ))
         }
+
     </>
     )
 }
@@ -29,8 +36,15 @@ User.propTypes = {
     ]),
     isLoggedIn: PropTypes.bool,
     friends: PropTypes.array,
+    address:PropTypes.shape({
+        title: PropTypes.string,
+        zip: PropTypes.number,
+    }),
 };
 
-
+User.defaultProps = {
+    name:'İsimsiz',
+    isLoggedIn: false,
+}
 
 export default User;
