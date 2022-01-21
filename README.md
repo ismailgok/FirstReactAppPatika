@@ -69,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # FirstReactAppPatika
+
+## STATE EXAMPLE PATIKE WORK
+
+[ARRAY STATE EXAMPLE](https://github.com/ismailgok/FirstReactAppPatika/tree/main/src/ImgWork)
+
+
+
