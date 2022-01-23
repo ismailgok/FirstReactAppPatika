@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Counter from './PatikaStateWork/Counter'
+import Counter from './PatikaStateWork/Counter';
+import InputExample from './PatikaStateWork/InputExample';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Counter />
+    {/* <Counter /> */}
+    <InputExample />
   </React.StrictMode>,
   document.getElementById('root')
 );
